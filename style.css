@@ -1,0 +1,114 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  --dot-bg:   white;
+  --dot-color: black;
+  --dot-size: 1px;
+  --dot-space: 22px;
+  background-image: linear-gradient(
+      62deg,
+      rgba(1, 95, 183, 0.9732216701223994) 13%,
+      rgba(19, 217, 232, 0.5) 4%
+    ),
+    linear-gradient(
+      44deg,
+      rgba(13, 31, 54, 0.079) 39%,
+      rgba(6, 54, 71, 0.5) 18%
+    ),
+    linear-gradient(
+      118deg,
+      rgba(84, 202, 242, 0.03152997265339608) 40%,
+      rgba(11, 97, 203, 0.5) 54%
+    ),
+    linear-gradient(
+      58deg,
+      rgba(90, 90, 237, 0.16144443572260592) 83%,
+      rgba(3, 13, 45, 0.5) 23%
+    );
+}
+
+.Heading {
+  font-family: "Gochi Hand", cursive;
+  /* font-weight: 400; */
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(11, 132, 225);
+  text-shadow: 2px 2px white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgb(117, 116, 116);
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 600px;
+  min-height: 500px;
+  background:
+  linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+  linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+  var(--dot-color);
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 4px 3px 7px 2px #00000040;
+}
+#item {
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 0.7rem;
+    border-bottom-right-radius: 15px 3px;
+    border-bottom-left-radius:3px 15px;
+    border: solid 3px transparent;
+    border-bottom: dashed 4px rgb(11, 132, 225);;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.5rem;
+    color: hsla(260, 2%, 25%, 0.7);
+    width: 70%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 83px;
+  
+}
+
+#to-do-box {
+  margin-top: 20px;
+  list-style: none;
+}
+
+#to-do-box li {
+  font-family: "Gochi Hand", cursive;
+  position: relative;
+  /* background-color: red; */
+  color: black;
+  padding: 15px;
+  font-size: 25px;
+  border-radius: 2px;
+  padding-right: 30px;
+  text-align: justify;
+  margin-top: 10px;
+  user-select: none;
+  border-radius: 5px;
+}
+#to-do-box li i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.done {
+  /* text-decoration: line-through; */
+  color: black;
+  background-color: rgb(18, 238, 18) !important;
+  
+}
